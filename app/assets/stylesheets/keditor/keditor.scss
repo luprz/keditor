@@ -1,0 +1,18 @@
+*[data-highlightable] {
+  outline: 1px dashed rgba(170,170,170,0.7);
+  outline-offset: -2px;
+}
+
+.kppl-el-hovered {
+  outline: 2px dashed #f44336 !important;
+  outline-offset: -2px;
+}
+
+.kppl-div-title {
+  background: #f44336 !important;
+  color: white;
+  position: absolute;
+  padding: 5px 10px 5px 10px;
+  font-size: .8rem;
+  font-family: Arial, Helvetica, sans-serif;
+}

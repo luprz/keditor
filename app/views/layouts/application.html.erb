@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>LiveEditor</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+  <body id="kppl-area">
+    <keppler-header>
+      <p>Navbar</p>
+    </keppler-header>
+    <keppler-view>
+    <%= yield %>
+    </keppler-view>
+    <keppler-footer>
+    </keppler-footer>
+  </body>
+</html>
