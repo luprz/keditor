@@ -1,15 +1,21 @@
-*[data-highlightable] {
-  outline: 1px dashed rgba(170,170,170,0.7);
-  outline-offset: -2px;
+
+#kppl-canvas{
+  height: 500px;
 }
+
+// *[data-highlightable] {
+//   outline: 1px dashed rgba(170,170,170,0.7);
+//   outline-offset: -2px;
+// }
 
 .kppl-el-hovered {
   outline: 2px dashed #f44336 !important;
+  background: #f4433609 !important;
   outline-offset: -2px;
 }
-
 .kppl-div-title {
-  background: #f44336 !important;
+  background: #f44336;
+  background-image: linear-gradient(0deg, #fd002f 0%, #f44336 75%);
   color: white;
   position: absolute;
   padding: 5px 10px 5px 10px;

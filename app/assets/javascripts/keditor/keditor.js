@@ -71,10 +71,16 @@
       nodeTitle.appendChild(nodeName(element));
       if(canvas_pos.top < location.top) {
         nodeTitle.style.top = (location.top - 25) + "px";
+        nodeTitle.style.borderRadius = "5px 5px 0 0";
       } else {
         nodeTitle.style.top = (location.top) + "px";
+        nodeTitle.style.borderRadius = "0 0 5px 5px";
       }
-      nodeTitle.style.left = location.left + "px";
+      if(canvas_pos.right < location.left) {
+        nodeTitle.style.right = location.right + "px";
+      } else {
+        nodeTitle.style.left = location.left + "px";
+      }
       document.body.appendChild(nodeTitle);
     }
     
